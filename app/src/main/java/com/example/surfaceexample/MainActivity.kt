@@ -27,8 +27,7 @@ class MainActivity : AppCompatActivity() {
     inner class Anim : Thread(), SurfaceHolder.Callback {
 
         var counter = 0
-        var img_ids: IntArray = intArrayOf
-	(
+        var img_ids: IntArray = intArrayOf(
                 R.drawable.dancer_1,
                 R.drawable.dancer_2,
                 R.drawable.dancer_3,
