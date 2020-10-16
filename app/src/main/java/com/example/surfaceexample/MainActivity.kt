@@ -22,15 +22,20 @@ class MainActivity : AppCompatActivity() {
         Anim().start()
     }
 
+
+
     inner class Anim : Thread(), SurfaceHolder.Callback {
+
         var counter = 0
-        var img_ids: IntArray = intArrayOf(
+        var img_ids: IntArray = intArrayOf
+	(
                 R.drawable.dancer_1,
                 R.drawable.dancer_2,
                 R.drawable.dancer_3,
                 R.drawable.dancer_4,
                 R.drawable.dancer_5,
-                R.drawable.dancer_6)
+                R.drawable.dancer_6
+	)
 
 
         override fun run() {
@@ -53,6 +58,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+
         private fun draw() {
             var surfaceView: SurfaceView = findViewById(R.id.surface_view)
             var myHolder: SurfaceHolder = surfaceView.holder
@@ -68,6 +74,7 @@ class MainActivity : AppCompatActivity() {
             }
 
         }
+
 
         override fun surfaceCreated(holder: SurfaceHolder) {
             Log.i(TAG, "surfaceCreated entered")
